@@ -29,7 +29,8 @@ function createGif(imgLink) {
 	});
 	$(imgDiv).append($newImg);
 }
-delbutton.addEventListener("click", function () {
+delbutton.addEventListener("click", function (event) {
+	event.preventDefault();
 	imgDiv.innerHTML = "";
 });
 
